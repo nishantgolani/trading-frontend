@@ -2,7 +2,8 @@ import React , {useState} from 'react';
 import './Login.css';
 
 function Login(props) {
-  const [isSignUp, setIsSignUp] = useState(true);
+  const [isSignUp, setIsSignUp] = useState(false);
+  props.funcNav(false);
   const toggle = () => {
     setIsSignUp(!isSignUp);
   };

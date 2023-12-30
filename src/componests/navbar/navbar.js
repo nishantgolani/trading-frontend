@@ -24,60 +24,35 @@ function Navbar() {
                         <ul className="navbar-nav ms-md-auto gap-2">
                             {/* Your existing navigation items */}
                             <li className="nav-item rounded">
-                                <a className="nav-link active" aria-current="page"  href="/">
+                                <a className="nav-link active" aria-current="page" href="/">
                                     <i className="bi bi-house-fill me-2" />
-                                    
                                     Home
                                 </a>
                             </li>
                             <li className="nav-item rounded">
-                                <a className="nav-link" href="/">
+                                <a className="nav-link" href="/about">
                                     <i className="bi bi-people-fill me-2" />
                                     About
                                 </a>
                             </li>
                             <li className="nav-item rounded">
-                                <a className="nav-link" href="/">
+                                <a className="nav-link" href="/contact">
                                     <i className="bi bi-people-fill me-2" />
                                     Contact Us
                                 </a>
                             </li>
-                            <li className="nav-item dropdown rounded">
-
-                                <a className="nav-link dropdown-toggle" id="navbarDropdown"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                            <li className="nav-item rounded">
+                                <a className="nav-link" href="/login">
                                     <i className="bi bi-people-fill me-2" />
-                                    Profile
+                                    Login
                                 </a>
-
-                                <ul
-                                    className="dropdown-menu dropdown-menu-end bg-dark"
-                                    aria-labelledby="navbarDropdown"
-
-                                >
-                                    <li>
-                                        <a className="nav-link nav-item dropdown-item bg-dark " href="/">
-                                            <i className="bi bi-people-fill me-2" />
-                                            Account
-                                        </a>
-
-                                    </li>
-
-                                    <li>
-                                        <a className="nav-link nav-item dropdown-item bg-dark" href="/login">
-                                            <i className="bi bi-person-fill me-2" />
-                                            Login
-                                        </a>
-
-                                    </li>
-                                </ul>
                             </li>
+
+
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav >
         </>
     );
 }

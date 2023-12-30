@@ -14,7 +14,7 @@
 
 } */
 
-body {
+/* body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -34,7 +34,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   font-family: Montserrat, sans-serif;
-}
+} */
 
 /* Your other styles for page content go here */
 
@@ -74,6 +74,7 @@ body {
   color: #9eaeba;
   text-align: justify;
   margin-inline-start: -10px;
+  font-size: 150%;
 }
 
 #access-btn {
@@ -124,6 +125,12 @@ body {
   #desktop-img {
     padding-top: 15vh;
   }
+  .company-info {
+    color: #9eaeba;
+    text-align: justify;
+    margin-inline-start: -10px;
+    font-size: 75%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -157,5 +164,11 @@ body {
 
   #desktop-img {
     padding-top: 15vh;
+  }
+  .company-info {
+    color: #9eaeba;
+    text-align: justify;
+    margin-inline-start: -10px;
+    font-size: 75%;
   }
 }
