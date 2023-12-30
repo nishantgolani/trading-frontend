@@ -11,7 +11,7 @@ import { useState } from 'react';
 import "./App.css"
 function App() {
 
-  const [showNav, setShowNav] = useState(true);
+  // const [showNav, setShowNav] = useState(true);
   const [showHome, setShowHome] = useState(true);
   return (
     
@@ -20,7 +20,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/login">
-          <Login funcNav={setShowNav, setShowHome} />
+          <Login funcNav={setShowHome} />
         </Route>
         <Route path="/about">
           <About funcNav={setShowHome}/>
@@ -35,7 +35,7 @@ function App() {
 }
     
       <Footer />
-}
+
     </Router >
    
   );
