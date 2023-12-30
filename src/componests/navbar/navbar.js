@@ -31,13 +31,13 @@ function Navbar() {
                                 </a>
                             </li>
                             <li className="nav-item rounded">
-                                <a className="nav-link" href="/about">
+                                <a className="nav-link" href="/">
                                     <i className="bi bi-people-fill me-2" />
                                     About
                                 </a>
                             </li>
                             <li className="nav-item rounded">
-                                <a className="nav-link" href="/contact">
+                                <a className="nav-link" href="/">
                                     <i className="bi bi-people-fill me-2" />
                                     Contact Us
                                 </a>
@@ -47,7 +47,7 @@ function Navbar() {
                                 <a className="nav-link dropdown-toggle" id="navbarDropdown"
                                     role="button"
                                     data-bs-toggle="dropdown"
-                                    aria-expanded="false" href="/Profile">
+                                    aria-expanded="false">
                                     <i className="bi bi-people-fill me-2" />
                                     Profile
                                 </a>
@@ -58,7 +58,7 @@ function Navbar() {
 
                                 >
                                     <li>
-                                        <a className="nav-link nav-item dropdown-item bg-dark " href="/Account">
+                                        <a className="nav-link nav-item dropdown-item bg-dark " href="/">
                                             <i className="bi bi-people-fill me-2" />
                                             Account
                                         </a>

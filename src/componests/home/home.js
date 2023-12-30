@@ -40,7 +40,6 @@ export default function home() {
           <div className="col-xl-3" id="desktop-img" >
             <img
               src={desktopImage}
-              alt="desktop-image"
               className="desktop-img"
             />
           </div>

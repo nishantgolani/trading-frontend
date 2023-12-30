@@ -24,22 +24,22 @@ export default function Footer() {
                   </div>
                   <ul className="footer-social">
                     <li>
-                      <a href="#">
+                      <a href="/">
                         <i className="fab fa-facebook-f" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/">
                         <i className="fab fa-twitter" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/">
                         <i className="fab fa-vimeo-v" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/">
                         <i className="fab fa-google-plus-g" />
                       </a>
                     </li>
@@ -51,19 +51,19 @@ export default function Footer() {
                   <div className="footer-title">Services</div>
                   <ul className="list">
                     <li>
-                      <a href="#">Water Surve</a>
+                      <a href="/">Water Surve</a>
                     </li>
                     <li>
-                      <a href="#">Education for all</a>
+                      <a href="/">Education for all</a>
                     </li>
                     <li>
-                      <a href="#">Food Serving</a>
+                      <a href="/">Food Serving</a>
                     </li>
                     <li>
-                      <a href="#">Animal Saves</a>
+                      <a href="/">Animal Saves</a>
                     </li>
                     <li>
-                      <a href="#">Help Orphan</a>
+                      <a href="/">Help Orphan</a>
                     </li>
                   </ul>
                 </div>
@@ -88,16 +88,16 @@ export default function Footer() {
             <div className="row">
               <div className="col-lg-6 col-md-6 col-sm-12 column">
                 <div className="copyright">
-                  <a href="#">Anup</a> © 2019 All Right Reserved
+                  <a href="/">Anup</a> © 2019 All Right Reserved
                 </div>
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 column">
                 <ul className="footer-nav">
                   <li>
-                    <a href="#">Terms of Service</a>
+                    <a href="/">Terms of Service</a>
                   </li>
                   <li>
-                    <a href="#">Privacy Policy</a>
+                    <a href="/">Privacy Policy</a>
                   </li>
                 </ul>
               </div>
