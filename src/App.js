@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './componests/navbar/navbar';
 import Footer from './componests/footer/footer';
@@ -7,38 +6,41 @@ import Login from './componests/login/Login';
 import Home from './componests/home/home';
 import About from './componests/about/about';
 import Contact from './componests/contact/contact';
-import { useState } from 'react';
-import "./App.css"
-function App() {
+import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from 'react-dom'; // Import ReactDOM
 
-  // const [showNav, setShowNav] = useState(true);
-  const [showHome, setShowHome] = useState(true);
+import "./App.css"
+
+function App() {
+  // const [showHome, setShowHome] = useState(true);
+
   return (
-    
     <Router>
-     
       <Navbar />
       <Switch>
         <Route path="/login">
-          <Login funcNav={setShowHome} />
+          <Login  />
         </Route>
         <Route path="/about">
-          <About funcNav={setShowHome}/>
+          <About  />
         </Route>
         <Route path="/contact">
-          <Contact funcNav={setShowHome} />
+          <Contact />
         </Route>
-      </Switch>
-      {showHome &&<Route path="/">
+        <Route path="/">
           <Home />
         </Route>
-}
-    
+      </Switch>
       <Footer />
-
-    </Router >
-   
+    </Router>
   );
 }
+
+ReactDOM.render(
+  <BrowserRouter basename="/">
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
 
 export default App;

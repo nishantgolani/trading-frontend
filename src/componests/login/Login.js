@@ -3,11 +3,10 @@ import './Login.css';
 
 function Login(props) {
   const [isSignUp, setIsSignUp] = useState(false);
-  props.funcNav(false);
+  // props.funcNav(false);
   const toggle = () => {
     setIsSignUp(!isSignUp);
   };
-  props.funcNav(false);
   return (
     <>
       <div id="container-login" className={`container-fuild ${isSignUp ? 'sign-up' : 'sign-in'}`}>
