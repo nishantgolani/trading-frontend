@@ -1,19 +1,9 @@
-import React, {useState}  from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
 function Navbar() {
-    const [mode, setMode] = useState('dark');
-    const togglerMode = () => {
-      if (mode === 'dark') {
-        setMode('light')
-        document.body.style.backgroundColor = 'black';
-      }
-      else {
-        setMode('dark')
-        document.body.style.backgroundColor = 'white';
-      }
-    }
+
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,32 +24,33 @@ function Navbar() {
                         <ul className="navbar-nav ms-md-auto gap-2">
                             {/* Your existing navigation items */}
                             <li className="nav-item rounded">
-                                <Link className="nav-link active" aria-current="page" to="/">
+                                <a className="nav-link active" aria-current="page"  href="/">
                                     <i className="bi bi-house-fill me-2" />
+                                    
                                     Home
-                                </Link>
+                                </a>
                             </li>
                             <li className="nav-item rounded">
-                                <Link className="nav-link" to="/about">
+                                <a className="nav-link" href="/about">
                                     <i className="bi bi-people-fill me-2" />
                                     About
-                                </Link>
+                                </a>
                             </li>
                             <li className="nav-item rounded">
-                                <Link className="nav-link" to="/contact">
+                                <a className="nav-link" href="/contact">
                                     <i className="bi bi-people-fill me-2" />
                                     Contact Us
-                                </Link>
+                                </a>
                             </li>
                             <li className="nav-item dropdown rounded">
 
-                                <Link className="nav-link dropdown-toggle" id="navbarDropdown"
+                                <a className="nav-link dropdown-toggle" id="navbarDropdown"
                                     role="button"
                                     data-bs-toggle="dropdown"
-                                    aria-expanded="false" to="/Profile">
+                                    aria-expanded="false" href="/Profile">
                                     <i className="bi bi-people-fill me-2" />
                                     Profile
-                                </Link>
+                                </a>
 
                                 <ul
                                     className="dropdown-menu dropdown-menu-end bg-dark"
@@ -67,23 +58,19 @@ function Navbar() {
 
                                 >
                                     <li>
-                                        <Link className="nav-link nav-item dropdown-item bg-dark " to="/Account">
+                                        <a className="nav-link nav-item dropdown-item bg-dark " href="/Account">
                                             <i className="bi bi-people-fill me-2" />
                                             Account
-                                        </Link>
+                                        </a>
 
                                     </li>
+
                                     <li>
-                                        <Link className="nav-link nav-item dropdown-item bg-dark" onClick={togglerMode}>
-                                            <i className="bi bi-people-fill me-2" />
-                                            {mode} mode
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link className="nav-link nav-item dropdown-item bg-dark"  to="/login">
+                                        <a className="nav-link nav-item dropdown-item bg-dark" href="/login">
                                             <i className="bi bi-person-fill me-2" />
                                             Login
-                                        </Link>
+                                        </a>
+
                                     </li>
                                 </ul>
                             </li>

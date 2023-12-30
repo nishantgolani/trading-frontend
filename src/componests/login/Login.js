@@ -6,9 +6,10 @@ function Login(props) {
   const toggle = () => {
     setIsSignUp(!isSignUp);
   };
+  props.funcNav(false);
   return (
     <>
-      <div id="container-login" className={`container ${isSignUp ? 'sign-up' : 'sign-in'}`}>
+      <div id="container-login" className={`container-fuild ${isSignUp ? 'sign-up' : 'sign-in'}`}>
         <div className="row" id="login-row">
           {/* SIGN UP */}
           <div className="col align-items-center flex-col sign-up">

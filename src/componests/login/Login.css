@@ -1,6 +1,10 @@
+body{
+    background: linear-gradient( #040c3a 0%, #1b0131 10%, #15021f 30%, #130d26 50%, #010525 70%, rgb(9 19 29 / 92%) 90%, #090416 100% ), linear-gradient(#040c3a, #1b0131 10% 30%, #15021f 50% 70%, #01150e 90%), linear-gradient( #040c3a 0%, #1b0131 10% 30%, #15021f 50% 70%, #01150e 90% 100% );
+}
 #container-login {
-    --primary-color: #4EA685;
-    --secondary-color: #57B894;
+    
+    --primary-color: #020e44, #0f2138, #000001, #14435c;
+    --secondary-color:  #020e44, #0f2138, #000001, #14435c;
     --black: #000000;
     --white: #ffffff;
     --gray: #efefef;
@@ -32,7 +36,7 @@ body::-webkit-scrollbar {
 
 #container-login {
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100vw; */
     overflow: hidden;
 }
 
@@ -104,7 +108,7 @@ body::-webkit-scrollbar {
     padding: .6rem 0;
     border-radius: .5rem;
     border: none;
-    background-color: var(--primary-color);
+    background: linear-gradient(90deg, #42afe0, #5fa1d8, #70aae4, #00a6ff);
     color: var(--white);
     font-size: 1.2rem;
     outline: none;
