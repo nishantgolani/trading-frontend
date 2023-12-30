@@ -10,7 +10,7 @@ export default function Footer() {
               <div className="col-lg-4 col-md-6 col-sm-12 footer-column">
                 <div className="logo-widget footer-widget">
                   <figure className="logo-box">
-                    <a href="#">
+                    <a href="/">
                       <img src="https://i.ibb.co/QDy827D/ak-logo.png" alt="" />
                     </a>
                   </figure>

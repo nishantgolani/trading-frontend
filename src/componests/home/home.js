@@ -41,6 +41,7 @@ export default function home() {
             <img
               src={desktopImage}
               className="desktop-img"
+              alt=""
             />
           </div>
         </div>
