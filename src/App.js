@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './componests/navbar/navbar';
 import Footer from './componests/footer/footer';
@@ -8,7 +8,7 @@ import About from './componests/about/about';
 import Contact from './componests/contact/contact';
 import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom'; // Import ReactDOM
-
+// import axios from 'axios';
 import "./App.css"
 
 function App() {
